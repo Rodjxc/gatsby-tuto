@@ -9,8 +9,8 @@ export default function Home({data}) {
 //we destructure the data from the graphql query (in this case stored inside the gatsby-config file).
   // const {title, description} = data.site.siteMetadata;
 
-  const image = getImage(data.file.childImageSharp.fluid)
-  //In the above, we're accessing "fluid" or non static image. Done following the docs about the gatsby image plugin
+  const image = getImage(data.file.childImageSharp)
+  //In the above, we're accesing to the data received from the query. Done following the docs about the gatsby image plugin
 
   return <Layout>
     <section className={styles.header}>
@@ -47,10 +47,6 @@ export const query = graphql`
 query BannerPic {
   file(relativePath: {eq: "banner.png"}) {
     childImageSharp {
-      fluid(traceSVG: {}) {
-        sizes
-        src
-      }
       gatsbyImageData
     }
   }
