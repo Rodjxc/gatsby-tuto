@@ -43,7 +43,7 @@ module.exports = {
   ],
   //not a plugin, we just put here some info that we can then retrieve with JS
   siteMetadata: {
-    title: 'Web Warrior',
+    title: 'Rod J Dev',
     description: 'web dev portfolio',
     copyright: 'This website is copyright 2023 Rod J Dev',
   },

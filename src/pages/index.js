@@ -15,10 +15,10 @@ export default function Home({data}) {
   return <Layout>
     <section className={styles.header}>
     <div>
-      <h2>Design</h2>
-      <h3>Develop & Deploy</h3>
-      <p>Ux Designer & Web Developer based in Oslo</p>
-      <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
+      <h2>Gatsby Test</h2>
+      <h3>Blog pages</h3>
+      <p>Using Gatsby, CSS Modules and GraphQL</p>
+      <Link className={styles.btn} to="/projects">Page Projects</Link>
     </div>
     <GatsbyImage image={image} alt="banner-img"/>
     {/* <img src="/banner.png" alt="site.banner" style={{maxWidth: '100%'}}></img> */}
