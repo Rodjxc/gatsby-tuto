@@ -19,6 +19,8 @@ export default function Projects ({data}) {
           <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
 <div> 
   <GatsbyImage image={getImage(project.frontmatter.thumb)} alt="project-img"/>
+  {/* Above we're fetching the image from the frontmatter too, and following the path from the query. In the markdown file 
+  we specify the route where the image is stored and here we just map it with the "project" the same way we do with the title. */}
   <h3> {project.frontmatter.title}</h3>
   <p> {project.frontmatter.stack}</p>
 </div>
